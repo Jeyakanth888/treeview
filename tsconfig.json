@@ -19,6 +19,14 @@
       "dom"
     ]
   },
+  "paths": {
+    "ngx-tree-select": [
+      "ngx-tree-select/src/index.ts"
+    ],
+    "ngx-tree-select/src/*": [
+      "ngx-tree-select/src/*"
+    ]
+  },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
     "strictInjectionParameters": true

@@ -1,0 +1,33 @@
+<div class="row">
+
+	<div class="col-md-4 p-5">
+
+		<p class="h6">Load local data and use instant search</p>
+		<br>
+
+    <mat-form-field>
+			<input matInput [(ngModel)]="model" placeholder="Search a person">
+  </mat-form-field>
+
+  <ng-template #t let-item="item">
+
+    {{ item.first_name }} {{ item.last_name }}
+  </ng-template>
+
+  <ax-ngx-tree [axData]="data" 
+    (axSelect)="select($event)" 
+    [axSearch]= "search"
+    [axSearchValue]="model" 
+    [axTitle]="'country'" 
+    [axId]="'id'" 
+    [axSelectable]="true"
+    [axDragDrop]="true"
+    [axCollectionItem]="'items'" 
+    (axSelection)="selected($event)"
+    [axTemplate]="t">
+  </ax-ngx-tree>
+  </div>
+  
+ 
+
+</div>
