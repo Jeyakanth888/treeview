@@ -1,0 +1,8 @@
+.e-treeview .e-list-item:nth-child(odd) .e-fullrow   {background: #CCC !important}
+.e-treeview .e-list-item:nth-child(even) .e-fullrow {background: #FFF !important}
+
+.e-treeview .e-list-item:nth-child(odd) ul li.e-list-item:nth-child(odd) .e-fullrow   {background: #FFF !important}
+.e-treeview .e-list-item:nth-child(odd) ul li.e-list-item:nth-child(even) .e-fullrow {background: #ccc !important}
+
+.e-treeview .e-list-item:nth-child(even) ul li.e-list-item:nth-child(odd) .e-fullrow   {background: #ccc !important}
+.e-treeview .e-list-item:nth-child(even) ul li.e-list-item:nth-child(even) .e-fullrow {background: #fff !important}
